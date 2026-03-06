@@ -180,7 +180,9 @@ public class Dispatcher extends Stopable {
 
 			ClientSession session = storage.getSession(user);
 
-			session.send(msg);
+			if (session != null) {
+				session.send(msg);
+			}
 
 			}
 
@@ -188,4 +190,4 @@ public class Dispatcher extends Stopable {
 
 
 	}
-}
+
