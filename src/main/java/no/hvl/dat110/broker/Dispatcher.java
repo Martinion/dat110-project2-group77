@@ -128,7 +128,7 @@ public class Dispatcher extends Stopable {
 		// TODO: delete the topic from the broker storage
 		// the topic is contained in the delete topic message
 
-		String topic = storage.getTopic();
+		String topic = storage.getTopics();
 
 		
 
